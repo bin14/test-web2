@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@700&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+
+body {
+  margin: 0;
+  background: #020202;
+  /* cursor: crosshair; */
+
+  /* Add Image */
+  background-image: url("w3css.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+canvas {
+  display: block;
+}
+h1 {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: "Source Sans Pro";
+  font-size: 5em;
+  font-weight: 900;
+  -webkit-user-select: none;
+  user-select: none;
+  background-image: url(https://media.giphy.com/media/DXlNcsmlvSNtsTIBuq/giphy.gif);
+
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-size: 60px;
+  margin: 10px 0;
+}
+
+/* Console Text */
+.hidden {
+  opacity: 0;
+}
+.console-container {
+  font-family: Khula;
+  /* font-size: 4em; */
+  font-size: 3em;
+  text-align: center;
+  /* height: 200px; */
+  height: 70vh;
+  width: 600px;
+  display: block;
+  position: absolute;
+  color: white;
+  /* Container up and down */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.console-underscore {
+  display: inline-block;
+  position: relative;
+  top: -0.14em;
+  left: 10px;
+}
+
+/* image */
+
+img {
+  opacity: 0.3;
+  height: 100%;
+
+  /* position: absolute; */
+  /* top: 10%; */
+  /* right: 50%; */
+  /* width:600px; */
+  /* height: 480px; */
+  border: 3px solid #73ad21;
+
+  left: 50%;
+  /* Move the image up and down */
+  top: -19%;
+  transform: translate(-50%, 0);
+  position: absolute;
+  z-index: 1;
+}
+
+.parent {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.box {
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background: linear-gradient(-30deg, #4a00e0, #8e2de2);
+}
+
+h1 {
+  font-size: 80px;
+}
