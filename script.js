@@ -162,6 +162,7 @@ document.ontouchstart = evt => birthday.onClick(evt);
 // function([string1, string2],target id,[color1,color2])
 consoleText(
   [
+    "To Peter",
     "Sending you and your family my best wishes on the auspicious occasion of Eid-Ul-Fitr.",
     "Praying for everyone’s good health and well-being inshallah.",
     "With all our duas.",
