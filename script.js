@@ -1,3 +1,21 @@
+// Params Query String
+// http://127.0.0.1:5501/index.html?to=Peter&from=Smith
+
+console.log("Window Location:", window.location);
+
+const myKeyValues = window.location.search;
+console.log(myKeyValues);
+
+const urlParams = new URLSearchParams(myKeyValues);
+
+const param1 = urlParams.get("to");
+const param2 = urlParams.get("from");
+
+console.log("To:", param1);
+console.log("From:", param2);
+
+// END
+
 // helper functions
 const PI2 = Math.PI * 2;
 const random = (min, max) => (Math.random() * (max - min + 1) + min) | 0;
@@ -162,11 +180,11 @@ document.ontouchstart = evt => birthday.onClick(evt);
 // function([string1, string2],target id,[color1,color2])
 consoleText(
   [
-    "To Peter",
+    `To ${param1}`,
     "Sending you and your family my best wishes on the auspicious occasion of Eid-Ul-Fitr.",
     "Praying for everyone’s good health and well-being inshallah.",
     "With all our duas.",
-    "Smith Family.",
+    `From ${param2}`,
   ],
   "text",
   ["tomato", "rebeccapurple", "lightblue"]
